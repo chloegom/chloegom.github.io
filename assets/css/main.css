@@ -2686,13 +2686,13 @@ input, select, textarea {
 			}
 
 		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
+			padding: 2em 2em 0.1em 4em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			max-width: 48em;
-			width: 60%;
+			max-width: 52em;
+			width: 80%;
 		}
 
 		.spotlight:nth-child(2n) {
@@ -2817,7 +2817,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #b44a23;
 			color: #c8ece9;
 		}
 
@@ -3891,7 +3891,7 @@ input, select, textarea {
 	}
 
 		#footer .icons {
-			font-size: 1.25em;
+			font-size: 2em;
 		}
 
 			#footer .icons a {
@@ -3901,6 +3901,22 @@ input, select, textarea {
 				#footer .icons a:hover {
 					color: #fff;
 				}
+				
+        /* Harmonize the Google Scholar PNG icon with other icons */
+        #footer .icons a.scholar-icon img {
+          display: inline-block !important;   /* important to override template */
+          height: 1.8rem;
+          filter: brightness(0.75) invert(0); /* makes it the same light color as other icons */
+          vertical-align: middle; !important;  /* aligns with text/icons */
+          margin-top: -5px; /* move down slightly */
+          opacity: 0.75;
+        }
+
+        #footer .icons a.scholar-icon:hover img {
+          opacity: 1;
+          filter: brightness(1) invert(0); /* full white on hover */
+        }
+
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
@@ -3997,3 +4013,12 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+	
+	#banner {
+  background-image: url("images/your-background.jpg");
+  background-size: cover;        /* fills the section */
+  background-position: center;   /* centers the image */
+  background-repeat: no-repeat;
+}
+
+
